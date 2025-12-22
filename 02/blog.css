@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  /* 常用字体 */
+  font-size: 16px;
+  /* 基准字体大小 */
+  line-height: 1.5;
+  /* 行高 */
+  color: #333;
+  /* 文字颜色 */
+  background-color: #f5f7fa;
+  /* 页面背景色 */
+  -webkit-font-smoothing: antialiased;
+  /* 字体抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #a9eae8;
+}
+.blog-card {
+  margin: 20px auto;
+  background-color: white;
+  width: 384px;
+  height: 522px;
+  border-radius: 20px;
+  box-shadow: #333;
+  box-shadow: 5px 5px rgba(0, 0, 0);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.blog-card .pigture {
+  border-radius: 10px;
+  width: 336px;
+  height: 200px;
+}
+.blog-card .Content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  height: 194px;
+}
+.blog-card .Content .learning-btn {
+  font-size: 16px;
+  width: 82px;
+  height: 29;
+  padding: 12px 4px;
+  background-color: yellow;
+}
+.blog-card .Content .learning-btn:active {
+  scale: 0.95;
+}
+.blog-card .Content .pubTime {
+  width: 143px;
+  height: 22px;
+  font-size: 12px;
+  line-height: 22px;
+}
+.blog-card .Content .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.blog-card .Content .title:hover {
+  color: aqua;
+}
+.blog-card .Content .Description {
+  font-size: 16px;
+  line-height: 150%;
+}
+.blog-card .Author {
+  height: 32px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.blog-card .Author .userpic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
