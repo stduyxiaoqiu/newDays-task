@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  /* 常用字体 */
+  font-size: 16px;
+  /* 基准字体大小 */
+  line-height: 1.5;
+  /* 行高 */
+  color: #333;
+  /* 文字颜色 */
+  background-color: #f5f7fa;
+  /* 页面背景色 */
+  -webkit-font-smoothing: antialiased;
+  /* 字体抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #a9eae8;
+}
+.container {
+  width: 520px;
+  height: 1100px;
+  margin: 20px auto;
+  padding: 18px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .imgCard {
+  width: 100%;
+  height: 170px;
+}
+.container .imgCard .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.container .recipe {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container .recipe h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.container .recipe .text {
+  font-size: 12px;
+}
+.container .recipe .preparation {
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #fff7fc;
+}
+.container .recipe .preparation h3 {
+  color: #763d55;
+}
+.container .recipe .preparation .preparationItem {
+  margin-left: 25px;
+}
+.container .recipe .preparation .preparationItem .liTitle {
+  font-weight: bold;
+}
+.container .recipe .preparation .preparationItem .liContent {
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.container .recipe .preparation .preparationItem::marker {
+  color: #763d55;
+}
+.container .ingred {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container .ingred h3 {
+  color: #9d7966;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container .ingred .ingreditems {
+  margin-left: 20px;
+}
+.container .ingred .ingreditems .ingreditem {
+  font-size: 14px;
+}
+.container .ingred .ingreditems li::marker {
+  color: #763d55;
+}
+.container .instruction {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container .instruction h3 {
+  color: #9d7966;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container .instruction .instructionItems {
+  margin-left: 20px;
+}
+.container .instruction .instructionItems .instructionItem {
+  padding-left: 10px;
+  font-size: 12px;
+}
+.container .instruction .instructionItems .instructionItem .liTitle {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.container .instruction .instructionItems .instructionItem::marker {
+  font-size: 14px;
+  color: #9d7966;
+}
+.container .nutrition-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container .nutrition-table h3 {
+  color: #9d7966;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container .nutrition-table .description {
+  font-size: 12px;
+}
+.container .nutrition-table .nutrition-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .nutrition-table .nutrition-items .nutrition-item {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.container .nutrition-table .nutrition-items .nutrition-item .label {
+  margin-left: 30px;
+  color: #555;
+  width: 80px;
+  margin-right: 120px;
+}
+.container .nutrition-table .nutrition-items .nutrition-item .value {
+  color: #8b4513;
+  /* 棕色，突出数值 */
+  font-weight: bold;
+  text-align: right;
+}
+.container .nutrition-table .nutrition-items .nutrition-item:last-child {
+  border-bottom: none;
+}
