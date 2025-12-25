@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  /* 常用字体 */
+  font-size: 14px;
+  /* 基准字体大小 */
+  line-height: 1.5;
+  /* 行高 */
+  color: #333;
+  /* 文字颜色 */
+  background-color: #f5f7fa;
+  /* 页面背景色 */
+  background-color: #1f1f1f;
+  -webkit-font-smoothing: antialiased;
+  /* 字体抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3eae3;
+  overflow: hidden;
+}
+.container {
+  width: 600px;
+  height: 450px;
+  margin: 20px auto;
+  display: flex;
+  border-radius: 10px;
+}
+.container .backImg {
+  width: 50%;
+  height: 100%;
+}
+.container .backImg img {
+  width: 100%;
+  scale: 1;
+  border-radius: 10px 0 0 10px;
+}
+.container .content {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.container .content .title {
+  font-size: 14px;
+  color: #717479;
+  letter-spacing: 3px;
+}
+.container .content .gabrielle {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+.container .content .introduce {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #717479;
+}
+.container .content .price {
+  display: flex;
+  align-items: center;
+}
+.container .content .price .new {
+  font-size: 30px;
+  color: #3c7761;
+}
+.container .content .price .old {
+  position: relative;
+  margin-left: 25px;
+  font-size: 14px;
+  color: #717479;
+  height: 20px;
+  line-height: 20px;
+}
+.container .content .price .old::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #717479;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.container .content .btn {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #1a4031;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  border: none;
+}
+.container .content .btn img {
+  margin-right: 12px;
+}
+.container .content .btn:active {
+  scale: 0.98;
+}
