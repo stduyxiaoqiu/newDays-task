@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif; /* 常用字体 */
+  font-size: 14px; /* 基准字体大小 */
+  line-height: 1.5; /* 行高 */
+  color: #333; /* 文字颜色 */
+  background-color: #f5f7fa; /* 页面背景色 */
+  background-color: #1f1f1f;
+  -webkit-font-smoothing: antialiased; /* 字体抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+.container {
+  width: 65%;
+  height: auto;
+  margin: 20px auto;
+  .header {
+    margin: 0 auto;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: 16px;
+      letter-spacing: 1.2px;
+      color: #89888e;
+    }
+    .subtitle {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      color: #4b4b5f;
+    }
+    .textContent {
+      word-wrap: break-word;
+      letter-spacing: 1.2px;
+      text-align: center;
+      width: 400px;
+      font-size: 10px;
+      color: #89888e;
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    height: 400px;
+    align-items: center;
+    .card {
+      height: 180px;
+      display: flex;
+      gap: 8px;
+      padding: 18px;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+      border-top: 3px solid rgb(230, 230, 230);
+      .cardTitle {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .cardText {
+        font-size: 14px;
+        color: #89888e;
+      }
+      .cardImage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        img {
+          width: 48px;
+          height: 48px;
+        }
+      }
+      &.cardBlue {
+        border-top: 3px solid rgb(150, 220, 220);
+      }
+      &.cardRed {
+        border-top: 3px solid rgb(235, 140, 155);
+      }
+
+      &.cardYellow {
+        border-top: 3px solid rgb(250, 225, 195);
+      }
+      &.cardGreen {
+        border-top: 3px solid rgb(150, 220, 220);
+      }
+    }
+    .coumln2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
