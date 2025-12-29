@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  /* 常用字体 */
+  font-size: 14px;
+  /* 基准字体大小 */
+  line-height: 1.5;
+  /* 行高 */
+  color: #333;
+  /* 文字颜色 */
+  background-color: #f5f7fa;
+  /* 页面背景色 */
+  background-color: #1f1f1f;
+  -webkit-font-smoothing: antialiased;
+  /* 字体抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d4d5da;
+  overflow: hidden;
+}
+.container {
+  margin: 20px auto;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 三列等宽 */
+  grid-template-rows: 230px 230px; /* 两行 */
+  column-gap: 10px;
+  row-gap: 10px;
+  .card {
+    display: flex;
+    padding: 18px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    color: white;
+    .perInfo {
+      display: flex;
+      align-items: center;
+      .avator {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+      }
+      .author {
+        margin-left: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .name {
+          font-size: 12px;
+        }
+        .introduce {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .description {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .detail {
+      font-size: 10px;
+    }
+  }
+  .cardOne {
+    grid-column: 1 / 3;
+    background-color: #a16eed;
+  }
+  .cardTwo {
+    grid-column: 3 / 4;
+    background-color: #49556b;
+  }
+  .cardThree {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-color: #ffffff;
+    color: black;
+  }
+  .cardFour {
+    grid-column: 1 / 2;
+    background-color: #ffffff;
+    color: black;
+  }
+  .cardFive {
+    grid-column: 2 / 4;
+    background-color: #191f2d;
+  }
+}
