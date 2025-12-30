@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  /* 常用字体 */
+  font-size: 14px;
+  /* 基准字体大小 */
+  line-height: 1.2;
+  /* 行高 */
+  color: #333;
+  /* 文字颜色 */
+  background-color: #f5f7fa;
+  /* 页面背景色 */
+  background-color: #1f1f1f;
+  -webkit-font-smoothing: antialiased;
+  /* 字体抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #edf2f8;
+  overflow: hidden;
+}
+.container {
+  width: 600px;
+  height: 220px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  background-color: white;
+  .backImg {
+    border-radius: 10px 0 0 10px;
+    flex: 1;
+    background-image: url("./images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .content {
+    flex: 1.8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .title {
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+    .text {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      color: #bdc3cf;
+    }
+    .perInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        display: flex;
+        gap: 10px;
+        .avator {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+        }
+        .name {
+          font-size: 14px;
+        }
+        .time {
+          font-size: 12px;
+
+          color: #bdc3cf;
+        }
+      }
+      .right {
+        position: relative;
+        .btn {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          border: none;
+          &:active {
+            scale: calc(0.88);
+          }
+          .share {
+            width: 12px;
+            height: 12px;
+          }
+        }
+        .share-box {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -50px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background-color: #bdc3cf;
+          width: 160px;
+          height: 35px;
+          border-radius: 10px;
+          background-color: #49536c;
+          color: #818da3;
+          &.transparent {
+            opacity: 0;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+
+            transform: translate(-50%);
+            width: 0;
+            height: 0;
+            border-top: 10px solid #49536c;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+          }
+          h3 {
+            width: 45%;
+            text-align: center;
+            font-size: 14px;
+          }
+          .icons {
+            width: 55%;
+            display: flex;
+            justify-content: start;
+            gap: 10px;
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
